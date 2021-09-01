@@ -4,8 +4,8 @@ import numpy as np
 
 img= cv.imread("cat/cat.png")
 # Create SURF object.
-# Here set Hessian Threshold to 500
-surf = cv.xfeatures2d.SURF_create(500)
+# Here set Hessian Threshold to 1500
+surf = cv.xfeatures2d.SURF_create(1500)
 
 # Find keypoints and descriptors directly
 kp, des = surf.detectAndCompute(img,None)
